@@ -1,4 +1,4 @@
-class familyMember {
+class FamilyMember {
     constructor(name, parents) {
         this.name = name;
         this.parents = parents;
@@ -9,9 +9,15 @@ class familyMember {
     }
 }
 
-let queenElizabethII = new familyMember("Queen Elizabeth II", ['King George VI', 'Queen Elizabeth']);
+let queenElizabethII = new FamilyMember("Queen Elizabeth II", ['King George VI', 'Queen Elizabeth']);
 
-let charles = new familyMember("Charles", ['Prince Phillip', 'Queen Elizabeth II']);
+let princeCharles = new FamilyMember("Prince Charles", ['Prince Phillip', 'Queen Elizabeth II']);
+
+let princeHarry = new FamilyMember("Prince Harry", ['Prince Charles', 'Princess Diana']);
+
+let archieHarrison = new FamilyMember("Archie Harrison", ['Prince Harry', 'Meghan']);
 
 console.log(queenElizabethII.childOf());
-console.log(charles.childOf());
+console.log(princeCharles.childOf());
+console.log(princeHarry.childOf());
+console.log(archieHarrison.childOf());
