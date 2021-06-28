@@ -5,7 +5,7 @@ class FamilyMember {
     }
 
     childOf() {
-        return this.name + ' is a child of ' + this.parents.join(' & ') + "." || "unknown";
+        return this.name + ' is a child of ' + this.parents.join(' & ') + ".";
     }
 }
 
